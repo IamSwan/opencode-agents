@@ -1,7 +1,7 @@
 ---
-description: Review and audit worker (Sonnet 5.5 xhigh). Reviews a diff, branch, pull request or whole repo for bugs, security holes, performance, missing tests and code to delete; ranked findings with file and line. Changes nothing.
+description: Review and audit worker (Opus 5.5 high). Reviews a diff, branch, pull request or whole repo for bugs, security holes, performance, missing tests and code to delete; ranked findings with file and line. Changes nothing.
 mode: subagent
-model: claude-agent/sonnet#xhigh
+model: claude-agent/opus#high
 color: "#ef4444"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

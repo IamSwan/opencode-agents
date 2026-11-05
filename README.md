@@ -9,12 +9,12 @@ Custom [OpenCode](https://opencode.ai) agents: one orchestrator and the workers 
 | [orchestrator](agents/orchestrator.md) | `claude-agent/opus#high` | Primary agent. Plans, splits the request, briefs the workers below, checks their results. |
 | [design](agents/design.md) | `claude-agent/opus#high` | Architecture, API and data design, UX flows, plans and specs. No code. |
 | [dev](agents/dev.md) | `claude-agent/sonnet#high` | Features, bug fixes, debugging, refactors, tests. |
-| [audit](agents/audit.md) | `claude-agent/sonnet#xhigh` | Reviews a diff, branch, PR or repo: bugs, security, load, tests, cuts. Read-only. |
+| [audit](agents/audit.md) | `claude-agent/opus#high` | Reviews a diff, branch, PR or repo: bugs, security, load, tests, cuts. Read-only. |
 | [chores](agents/chores.md) | `claude-agent/haiku` | Commits, pushes, pulls, merges, conflict resolution, doc rewrites. |
 
-Models follow cost per task times quality: Opus only where judgment is the product and the output is short (planning,
-design); Sonnet for the token-heavy work (writing code at high, reviewing at xhigh, since a missed bug costs more than
-the extra reasoning); Haiku for mechanical git and doc work.
+Models follow cost per task times quality: Opus where judgment is the product (planning, design, and reviewing, since
+a missed bug costs more than the extra tokens); Sonnet at high for the token-heavy work of writing code; Haiku for
+mechanical git and doc work.
 
 ## Use
 

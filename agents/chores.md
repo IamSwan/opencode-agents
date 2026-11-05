@@ -1,6 +1,6 @@
 ---
 description: Chores worker (Haiku 5.5). Commits, pushes, pulls, merges and rebases, resolves mechanical conflicts, rewrites and tidies docs (README, changelog, comments). Give it the repo and what to do; it stops and asks on anything that needs a design decision.
-mode: all
+mode: subagent
 model: claude-agent/haiku
 color: "#a3e635"
 permissions:
